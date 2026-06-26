@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人生の停滞感をリセットする！「五感インテリア」オンラインお部屋診断＆プチ改造セッション</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Noto Serif JP"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#f3f4f0', // 温かみのあるオフホワイト
+                            DEFAULT: '#7c9082', // 落ち着いたくすみグリーン
+                            dark: '#4a5d4e', // 深みのあるグリーン
+                            accent: '#d4a373', // 柔らかいキャメル・ゴールド系
+                            accentHover: '#c48f5b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* カスタムスタイル */
+        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .bg-pattern {
+            background-color: #f3f4f0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237c9082' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-brand-light antialiased">
+
+    <!-- Header / Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="font-serif font-bold text-brand-dark text-xl tracking-wider">
+                五感インテリア
+            </div>
+            <a href="#offer" class="hidden md:inline-block bg-brand-accent hover:bg-brand-accentHover text-white px-6 py-2 rounded-full font-medium transition duration-300 text-sm">
+                モニターに申し込む
+            </a>
+        </div>
+    </header>
+
+    <!-- ファーストビュー (Hero) -->
+    <section class="relative bg-white pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 text-center lg:text-left space-y-6">
+                    <p class="text-brand font-bold tracking-widest text-sm md:text-base">
+                        自分を責めるのは今日で終わりにしてください
+                    </p>
+                    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                        「仕事や人間関係が<br class="hidden md:block">なんだかうまくいかない…」
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 font-medium">
+                        それ、自分の能力や性格のせいだと<br class="hidden md:block">思っていませんか？
+                    </p>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto lg:mx-0 my-6"></div>
+                    <p class="text-gray-700 leading-relaxed">
+                        実は、うまくいかない本当の原因は、「家が散らかっているせい」や「なんとなく整っていない、居心地の悪い違和感」のせいかもしれません。<br>
+                        五感を使って、その閉塞感から抜け出す新しい方法がありました。
+                    </p>
+                    
+                    <div class="bg-brand-light border-l-4 border-brand-accent p-4 mt-8 rounded-r-lg text-left">
+                        <p class="font-bold text-brand-dark text-sm mb-1">【先着5名様限定】特別モニター募集開始！</p>
+                        <p class="text-lg font-serif font-bold text-gray-900">
+                            25年の空間づくりのプロが教える、<br>五感で脳を癒やし、人生の流れを変える<br>
+                            <span class="text-brand-accent text-xl">『オンラインお部屋診断＆プチ改造セッション』</span>
+                        </p>
+                    </div>
+
+                    <div class="pt-4 text-center lg:text-left">
+                        <a href="#offer" class="inline-block bg-brand hover:bg-brand-dark text-white text-lg font-bold px-10 py-4 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 w-full sm:w-auto text-center">
+                            今すぐ人生の停滞感をリセットする
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Placeholder -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="relative w-full aspect-[4/3] rounded-2xl shadow-xl overflow-hidden bg-gray-200 border-2 border-dashed border-gray-400 flex flex-col items-center justify-center text-gray-500 p-8 text-center group">
+                        <i class="fa-regular fa-image text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-lg mb-2">【ファーストビュー画像 推奨】</h3>
+                        <p class="text-sm">
+                            柔らかい朝の光が差し込む、植物と木製家具が調和した「隠れ家カフェ」のようなリビングや部屋の写真。<br><br>
+                            見るだけで深呼吸したくなるような、リラックス感と希望を感じさせる、明るく美しい空間の画像を入れてください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 1: 共感と悩み -->
+    <section class="py-20 bg-pattern">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-serif text-2xl md:text-3xl font-bold text-center text-brand-dark mb-12">
+                こんな風に、自分を責めてしまっていませんか？
+            </h2>
+
+            <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl shadow-md">
+                <div class="md:w-1/2 w-full space-y-4">
+                    <!-- 悩みのリスト -->
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                        <p class="text-gray-700">「また職場でうまく立ち回れなかった…<strong>私が不器用だからだ</strong>」</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                        <p class="text-gray-700">「人間関係でいつも疲れてしまう…<strong>気を遣いすぎなのかな</strong>」</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand mt-1 mr-3"></i>
+                        <p class="text-gray-700">「やりたい事があるのに動けない…<strong>私って本当に意志が弱い</strong>」</p>
+                    </div>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-triangle-exclamation text-brand-accent mt-1 mr-3"></i>
+                        <p class="text-gray-700 font-medium">足の踏み場がないほど散らかっているわけじゃないのに、家にいてもなんとなく居心地が悪く、違和感がある。</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-triangle-exclamation text-brand-accent mt-1 mr-3"></i>
+                        <p class="text-gray-700 font-medium">疲れて帰ってきたのに、整っていない部屋を見て「家事もちゃんとできないダメな自分」にさらに落ち込む。</p>
+                    </div>
+                </div>
+
+                <!-- 悩み画像 -->
+                <div class="md:w-1/2 w-full">
+                    <div class="w-full aspect-square md:aspect-auto md:h-64 rounded-xl overflow-hidden shadow-md">
+                        <img src="images/worry.png" alt="悩む女性のイメージ" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-serif font-bold text-gray-800 leading-relaxed">
+                    毎日モヤモヤするその閉塞感、<br>
+                    <span class="text-brand-accent border-b-4 border-brand-accent/30">決して「あなたが悪い」わけではありません。</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 2: パラダイムシフト -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-serif text-2xl md:text-3xl font-bold text-center text-brand-dark mb-16 leading-tight">
+                なぜ「なんとなく整っていない」のが、<br class="hidden md:block">人生に悪影響を及ぼすのか？
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- 図解（HTML/CSSによる視覚化） -->
+                <div class="order-2 md:order-1">
+                    <div class="w-full rounded-2xl bg-white p-8 border border-brand/20 shadow-md space-y-6">
+                        <div class="text-center font-bold text-brand-dark mb-4">
+                            脳のエネルギーが奪われる仕組み
+                        </div>
+                        <!-- Step 1 -->
+                        <div class="flex items-center gap-4 bg-red-50 p-4 rounded-xl border border-red-100">
+                            <div class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">部屋の視覚的ノイズ</h4>
+                                <p class="text-xs text-gray-600">散らかり、不快な光、動線の悪さ</p>
+                            </div>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="flex justify-center text-red-400">
+                            <i class="fa-solid fa-arrow-down text-xl"></i>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex items-center gap-4 bg-orange-50 p-4 rounded-xl border border-orange-100">
+                            <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">脳への持続的な緊張刺激</h4>
+                                <p class="text-xs text-gray-600">無意識下で脳が休まらない状態</p>
+                            </div>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="flex justify-center text-orange-400">
+                            <i class="fa-solid fa-arrow-down text-xl"></i>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex items-center gap-4 bg-red-100 p-4 rounded-xl border border-red-200">
+                            <div class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">脳の疲労＆エネルギー不足</h4>
+                                <p class="text-xs text-gray-700 font-medium">余裕がなくなり、日常の物事が空回り</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2 space-y-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        仕事や人間関係で気を張り詰めた後、帰るべき家が乱れていたり居心地が悪かったりすると、目や肌から入る<strong>「ノイズ」によって脳は休まるどころか常に緊張状態</strong>を強いられます。
+                    </p>
+                    <div class="bg-red-50 border-l-4 border-red-300 p-4 rounded text-sm text-gray-700">
+                        「照明が明るすぎて落ち着かない」<br>
+                        「動線が悪くてイライラする」<br>
+                        「視界に余計なモノが入る」
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        といった小さな違和感は、ジワジワと脳のエネルギーを奪い続けます。<br><br>
+                        脳が疲労しきっているから、心に余裕がなくなり、仕事や人間関係がうまくいかず、新しいことに挑戦する気力も奪われる。
+                    </p>
+                    <div class="bg-brand-dark text-white p-5 rounded-lg text-center font-bold text-lg shadow-md">
+                        環境の違和感を放置している<br>
+                        ||<br>
+                        脳のエネルギーが漏れ続けている状態
+                    </div>
+                    <p class="text-gray-700 leading-relaxed font-medium">
+                        この負のループにいる限り、気合いや根性で自分を変えようとしても限界があるのです。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 3: 解決策と理想の未来 -->
+    <section class="py-20 bg-brand text-white relative overflow-hidden">
+        <!-- 背景の装飾 -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full border-4 border-white/10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full border-4 border-white/10"></div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="font-serif text-2xl md:text-3xl font-bold mb-8 leading-tight">
+                無理に自分を変える必要はない。<br>
+                「五感」を使って環境を変えればいい。
+            </h2>
+            
+            <p class="text-lg text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+                ただ物を捨てる（断捨離する）だけでは、脳は癒されません。香り、光、音、手触りなど、<strong>五感を通して脳に「心地よい情報」を届ける「五感空間」を作ることが重要</strong>です。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-gray-800">
+                <!-- 五感画像1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/gokan_1.png" alt="視覚・嗅覚の癒やし" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4 bg-white flex-1 flex flex-col justify-center">
+                        <h3 class="font-bold text-brand-dark flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-leaf"></i> 視覚・嗅覚
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2">観葉植物やアロマディフューザーが美しく調和した空間</p>
+                    </div>
+                </div>
+                <!-- 五感画像2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/gokan_2.png" alt="光・雰囲気の癒やし" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4 bg-white flex-1 flex flex-col justify-center">
+                        <h3 class="font-bold text-brand-dark flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-lightbulb"></i> 光・雰囲気
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2">温かみのある間接照明が灯る、夜のリラックス空間</p>
+                    </div>
+                </div>
+                <!-- 五感画像3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/gokan_3.png" alt="触覚・味覚の癒やし" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4 bg-white flex-1 flex flex-col justify-center">
+                        <h3 class="font-bold text-brand-dark flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-mug-hot"></i> 触覚・味覚
+                        </h3>
+                        <p class="text-xs text-gray-600 mt-2">肌触りの良いブランケットや、温かい飲み物で五感を癒やす</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-xl max-w-3xl mx-auto transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-bold text-brand-dark mb-4">手に入るのは「隠れ家カフェ」のような環境</h3>
+                <p class="leading-relaxed">
+                    脳が心底リラックスし、エネルギーがフル充電される環境が手に入れば、自然と心に余裕が生まれます。<br>
+                    <strong>「頑張らなきゃ」と自分を奮い立たせなくても、人間関係も仕事もスルスルとうまく回り始める</strong>のです。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 4: 権威性の提示（講師プロフィール） -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-serif text-2xl md:text-3xl font-bold text-center text-brand-dark mb-12">
+                25年の実績を持つプロが、<br class="md:hidden">あなたの部屋と脳のノイズを取り除きます
+            </h2>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-10 items-center">
+                
+                <!-- プロフィール画像 -->
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <div class="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-lg">
+                        <img src="images/profile.png" alt="五感ブレインコーチ かよ" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-center md:text-left">
+                        <p class="text-sm font-bold text-brand mb-1">五感ブレインコーチ</p>
+                        <h3 class="text-3xl font-serif font-bold text-gray-900">かよ</h3>
+                    </div>
+                    
+                    <ul class="space-y-2 text-sm md:text-base text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-crown text-brand-accent mt-1 mr-2 w-5"></i>
+                            <span>雑貨店・サロンで25年間培った「空間づくりと癒やし」のプロフェッショナル。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-house-chimney-user text-brand-accent mt-1 mr-2 w-5"></i>
+                            <span>現在、築40年超えの昭和感満載の和室をご自身で快適な空間に大改造中。</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-stone-50 p-4 rounded-lg mt-4 text-sm text-gray-700 italic border-l-4 border-brand">
+                        「完璧な家なんてありません。『今の部屋から暮らしは変えられる』ということを、私自身が身をもって体現しています。無理な努力や根性論ではなく、インテリアと五感で、心・体・習慣が自然と整うきっかけを全力でお届けします。」
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 5: オファー（商品の具体的な提示） -->
+    <section id="offer" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-brand font-bold mb-2">＼ あなたのための特別なセッション ／</p>
+                <h2 class="font-serif text-2xl md:text-3xl font-bold text-brand-dark leading-tight">
+                    まずは、あなたのエネルギーを奪う<br>「部屋の重たい原因」を見つけませんか？
+                </h2>
+            </div>
+
+            <div class="bg-brand-light rounded-3xl p-2 md:p-8 shadow-xl border-t-8 border-brand-accent relative">
+                <!-- セッションイメージ -->
+                <div class="w-full h-48 md:h-64 rounded-t-2xl md:rounded-xl mb-6 overflow-hidden relative shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=80" alt="オンラインセッションのイメージ" class="w-full h-full object-cover">
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 md:p-10 shadow-sm relative z-10 -mt-10 mx-4 md:mx-0">
+                    <h3 class="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6 border-b-2 border-brand-light pb-4">
+                        『人生の停滞感をリセットする！<br class="md:hidden">「五感インテリア」<br>オンラインお部屋診断＆プチ改造セッション』
+                    </h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="flex items-center text-gray-700">
+                            <i class="fa-solid fa-video text-brand mr-3 w-6 text-center"></i>
+                            <strong>提供スタイル：</strong> オンライン（Zoom）による 60分〜90分の個別コンサルティング
+                        </p>
+                        <p class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-camera text-brand mr-3 w-6 text-center mt-1"></i>
+                            <span><strong>事前準備：</strong> お客様から事前に「悩んでいるお部屋（または特定の1箇所）」の写真や動画をお送りいただきます。</span>
+                        </p>
+                    </div>
+
+                    <h4 class="font-bold text-lg text-brand-dark mb-4 text-center">セッションで得られる3つの価値</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+                        <div class="bg-brand-light p-5 rounded-xl border border-white">
+                            <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">1</div>
+                            <h5 class="font-bold text-gray-900 mb-2">プロによる<br>ノイズ診断</h5>
+                            <p class="text-sm text-gray-600">視覚的・動線的に「脳を疲れさせている原因（小さな違和感）」をプロの目で特定します。</p>
+                        </div>
+                        <div class="bg-brand-light p-5 rounded-xl border border-white">
+                            <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">2</div>
+                            <h5 class="font-bold text-gray-900 mb-2">片付けの<br>最短ルート指導</h5>
+                            <p class="text-sm text-gray-600">どこから手を付ければ一番早く脳がスッキリするか、具体的な手順をアドバイスします。</p>
+                        </div>
+                        <div class="bg-brand-light p-5 rounded-xl border border-white">
+                            <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">3</div>
+                            <h5 class="font-bold text-gray-900 mb-2">五感インテリアの<br>プチ提案</h5>
+                            <p class="text-sm text-gray-600">部屋を「隠れ家カフェ」に近づけ、明日からできる小さな工夫（光、配置、香り等）を伝授します。</p>
+                        </div>
+                    </div>
+
+                    <!-- 価格・条件 -->
+                    <div class="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6 text-center">
+                        <div class="inline-block bg-red-500 text-white font-bold px-4 py-1 rounded-full text-sm mb-3 animate-pulse">
+                            先着5名様限定
+                        </div>
+                        <p class="text-gray-500 line-through mb-1">通常価格 11,000円</p>
+                        <div class="flex items-center justify-center justify-baseline gap-2 mb-2">
+                            <span class="text-xl font-bold text-gray-800">特別モニター価格：</span>
+                            <span class="text-4xl md:text-5xl font-bold text-red-600">3,000</span>
+                            <span class="text-xl font-bold text-gray-800">円(税込)</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3">※終了後の簡単なアンケート提出（写真の匿名掲載許可など）へのご協力が条件となります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 6: クロージング & CTA -->
+    <section class="py-20 bg-brand-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="font-serif text-2xl md:text-4xl font-bold mb-6 leading-tight">
+                「今の部屋から、これからの暮らしは<br class="hidden md:block">絶対に変えられます。」
+            </h2>
+            <p class="text-lg text-white/80 mb-10 leading-relaxed">
+                もう、自分を責めるのはやめませんか？<br>
+                あなたが一歩を踏み出し、心から安心できる空間を手に入れるための<br class="hidden md:block">お手伝いをさせてください。
+            </p>
+
+            <a href="#offer" class="inline-block bg-brand-accent hover:bg-yellow-500 text-white text-xl md:text-2xl font-bold px-8 md:px-16 py-5 md:py-6 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 border-b-4 border-yellow-700 hover:border-yellow-600 w-full sm:w-auto">
+                モニター価格（3,000円）で申し込む
+                <i class="fa-solid fa-chevron-right ml-2 text-lg"></i>
+            </a>
+            <p class="mt-4 text-sm text-white/60">※定員に達し次第、通常価格に戻ります。</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                &copy; 2026 五感ブレインコーチ かよ. All Rights Reserved.
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a>
+                <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
